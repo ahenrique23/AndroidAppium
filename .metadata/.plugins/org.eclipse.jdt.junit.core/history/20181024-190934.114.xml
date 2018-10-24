@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculadoraTeste2" project="cursoAppium" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="appium.CalculadoraTeste2" time="19.191">
+    <testcase name="calcula2Valores" classname="appium.CalculadoraTeste2" time="19.191"/>
+  </testsuite>
+</testrun>

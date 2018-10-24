@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;appium.calcula2Valores.java&apos; to &apos;CalculadoraTeste2.java&apos;&#x0D;&#x0A;- Original project: &apos;cursoAppium&apos;&#x0D;&#x0A;- Original element: &apos;appium.calcula2Valores.java&apos;&#x0D;&#x0A;- Renamed element: &apos;appium.CalculadoraTeste2.java&apos;" description="Rename compilation unit &apos;calcula2Valores.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;appium{calcula2Valores.java" name="CalculadoraTeste2.java" references="false" stamp="1539987384127" version="1.0"/>
+</session>
