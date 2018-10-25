@@ -18,7 +18,7 @@ import junit.framework.Assert;
 public class CalculadoraTeste2 {
 	
 	@Test
-	public void devePreencherCampoTexto() throws MalformedURLException {
+	public void calcula2Valores() throws MalformedURLException {
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 	    desiredCapabilities.setCapability("platformName", "Android");
 	    desiredCapabilities.setCapability("deviceName", "emulator-5554");
