@@ -35,7 +35,6 @@ INDEX VERSION 1.131+E:\Dev\AutomacaoAppium\.metadata\.plugins\org.eclipse.jdt.co
 2301944148.index
 1411170094.index
 1084624933.index
-1780668232.index
 3662295326.index
 4281951125.index
 2492325878.index
