@@ -1,0 +1,5 @@
+package appium.core;
+
+public class DSL {
+
+}
