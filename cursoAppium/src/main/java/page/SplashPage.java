@@ -17,7 +17,7 @@ public class SplashPage extends BasePage {
 	}
 	
 	public void aguardarSplashSumir() {
-		getDrive().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getDrive().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		WebDriverWait wait = new WebDriverWait(getDrive(), 10);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@text='Spash!']")));
 	}
