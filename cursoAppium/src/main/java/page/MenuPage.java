@@ -13,4 +13,8 @@ public class MenuPage extends BasePage{
 	public void acessarFormulario() {
 		clicar(By.xpath("//android.widget.TextView[@text='Formulário']"));
 	}
+	
+	public void acessarSplash() {
+		selecionarPorTexto("Splash");
+	}
 }
