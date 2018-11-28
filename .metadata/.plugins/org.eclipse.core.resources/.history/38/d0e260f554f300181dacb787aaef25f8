@@ -1,0 +1,28 @@
+package test;
+
+import org.junit.Test;
+import appium.core.BaseTest;
+import page.AlertPage;
+import page.MenuPage;
+
+public class AlertTest extends BaseTest {
+	
+	private MenuPage menu = new MenuPage();
+	private AlertPage page = new AlertPage();
+	
+	@Test
+	public void deveConfirmarAlerta() {
+	//acessar menu alerta
+	menu.acessarAlerta();	
+	//clicar em alerta confirm
+	page.clicarAlertaConfirm();
+	//Verificar os textos
+	
+	//Confirmar alerta
+	
+	//verificar nova mensagem
+	
+	//sair
+
+	}
+}

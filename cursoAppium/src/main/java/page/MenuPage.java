@@ -17,4 +17,8 @@ public class MenuPage extends BasePage{
 	public void acessarSplash() {
 		selecionarPorTexto("Splash");
 	}
+	
+	public void acessarAlerta() {
+		selecionarPorTexto("Alertas");
+	}
 }

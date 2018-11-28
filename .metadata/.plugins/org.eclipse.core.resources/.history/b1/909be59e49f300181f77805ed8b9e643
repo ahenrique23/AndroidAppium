@@ -1,0 +1,7 @@
+package test;
+
+import appium.core.BaseTest;
+
+public class AlertTest extends BaseTest {
+
+}

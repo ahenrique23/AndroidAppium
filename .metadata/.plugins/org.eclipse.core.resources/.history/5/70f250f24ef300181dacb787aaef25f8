@@ -1,0 +1,9 @@
+package page;
+
+import appium.core.BaseTest;
+
+public class AlertaPage extends BaseTest {
+	
+	
+
+}
