@@ -1,0 +1,17 @@
+package page;
+
+import org.openqa.selenium.By;
+
+import appium.core.BasePage;
+import io.appium.java_client.MobileBy;
+
+public class TabsPage extends BasePage {
+	
+	public String obterTextoAbas() {
+		return obterTexto(MobileBy.AccessibilityId("com.ctappium"));
+	}
+	
+	public void clicarAba2() {
+		selecionarPorTexto("ABA 2");
+	}
+}

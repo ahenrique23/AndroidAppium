@@ -1,0 +1,12 @@
+package page;
+
+import org.openqa.selenium.By;
+
+import appium.core.BasePage;
+
+public class TabsPage extends BasePage {
+	
+	public String obterTextoAba1() {
+		return obterTexto(By.className("android.widget.TextView"));
+	}
+}

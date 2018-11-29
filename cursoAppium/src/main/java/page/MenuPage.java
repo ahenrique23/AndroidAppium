@@ -21,4 +21,8 @@ public class MenuPage extends BasePage{
 	public void acessarAlerta() {
 		selecionarPorTexto("Alertas");
 	}
+	
+	public void acessarAbas() {
+		selecionarPorTexto("Abas");
+	}
 }

@@ -1,0 +1,7 @@
+package page;
+
+import appium.core.BasePage;
+
+public class TabsPage extends BasePage {
+
+}

@@ -1,0 +1,19 @@
+package test;
+
+import appium.core.BaseTest;
+import page.MenuPage;
+
+public class TabsTest extends BaseTest {
+
+	private MenuPage menu = new MenuPage();
+	
+	public void deveTestarAbas() {
+		//Acessar menu abas
+		menu.acessarAbas();
+		//Conferir texto
+		
+		//Acessar aba 2
+		
+		//Conferir texto
+	}
+}
