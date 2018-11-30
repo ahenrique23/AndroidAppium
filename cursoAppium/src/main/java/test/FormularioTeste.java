@@ -74,4 +74,24 @@ public class FormularioTeste extends BaseTest{
 	    assertTrue(page.obterCheckCadastrado().endsWith("Off"));
 	    assertTrue(page.obterSwitchCadastrado().endsWith("Marcado"));
 	}	
+	
+	//Terminar esse metodo
+	@Test
+	public void deveIneragirComDatePicker() {
+		
+		//Selecionar o date
+		page.selecionarPorTexto("Data Apresentada No App");
+		//Alterar a data 
+		page.selecionarPorTexto("20");
+		//Confirmar a alteração
+		page.selecionarPorTexto("Confirmar");
+		//Verificar a data
+		Assert.assertTrue(page.obterTextoData());
+	}
+	
+	
+	
+	
+	
+	
 }

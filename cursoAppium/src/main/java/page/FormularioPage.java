@@ -61,4 +61,9 @@ public class FormularioPage extends BasePage {
 	public String obterSwitchCadastrado() {
 		return obterTexto(By.xpath("//android.widget.TextView[starts-with(@text, 'Checkbox')]"));
 	}
+	
+	public boolean obterTextoData() {
+		return existeElentoPorTexto("Data a comparar");
+		
+	}
 }
