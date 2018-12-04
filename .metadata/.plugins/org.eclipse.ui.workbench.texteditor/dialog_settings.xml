@@ -10,6 +10,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="date"/>
 			<item value="selecionarPorTexto"/>
 			<item value="dsl."/>
 			<item value="formulario"/>

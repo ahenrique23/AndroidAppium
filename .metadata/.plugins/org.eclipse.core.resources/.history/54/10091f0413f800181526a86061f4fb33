@@ -80,11 +80,11 @@ public class FormularioTeste extends BaseTest{
 	public void deveIneragirComDatePicker() {
 		
 		//Selecionar o date
-		page.selecionarPorTexto("01/01/2000");
+		page.selecionarPorTexto("Data Apresentada No App");
 		//Alterar a data 
 		page.selecionarPorTexto("20");
 		//Confirmar a alteração
-		page.selecionarPorTexto("OK");
+		page.selecionarPorTexto("Confirmar");
 		//Verificar a data
 		Assert.assertTrue(page.obterTextoData());
 	}

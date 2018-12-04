@@ -35,7 +35,7 @@ public class AccordionPage extends BasePage {
 	}
 	
 	public boolean obterTextoAccordion3() {
-		return existeElentoPorTexto("Esta é a descrição da opção 3. Que pode, inclusive ter mais que uma linha");
+		return existeElentoPorTexto("Esta é a descrição da opção 3");
 	}
 	
 	public boolean obterTextoAccordion4() {

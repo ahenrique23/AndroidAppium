@@ -20,23 +20,23 @@ public class AccordionTest extends BaseTest {
 		//Clicar menu accordion		
 		menu.acessarAccordion();
 		//Acessar accordion op1
-		page.clicarOpcao1();
+		page.clicarAccordion1();
 		//Conferir texto do resultado 1
 		Assert.assertTrue(page.obterTextoAccordion1());		
 		//Acessar accordion op2
-		page.clicarOpcao2();
+		page.clicarAccordion2();
 		//Conferir texto do resultado 2		
 		Assert.assertTrue(page.obterTextoAccordion2());
 		//Acessar accordion op3
-		page.clicarOpcao3();
+		page.clicarAccordion3();
 		//Conferir texto do resultado 3
 		Assert.assertTrue(page.obterTextoAccordion3());
 		//Acessar accordion op4
-		page.clicarOpcao4();
+		page.clicarAccordion4();
 		//Conferir texto do resultado 4
 		Assert.assertTrue(page.obterTextoAccordion4());
 		//Acessar accordion op5
-		page.clicarOpcao5();
+		page.clicarAccordion5();
 		//Conferir texto do resultado 5
 		Assert.assertTrue(page.obterTextoAccordion5());
 	}
