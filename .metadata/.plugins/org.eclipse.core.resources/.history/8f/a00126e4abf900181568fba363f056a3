@@ -1,0 +1,12 @@
+package page;
+
+import appium.core.BasePage;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+
+public class CliquePage extends BasePage {
+
+	public void  cliqueLongo(String texto) {
+		clicar(MobileBy.AccessibilityId("Clique Longo"));
+	}
+}

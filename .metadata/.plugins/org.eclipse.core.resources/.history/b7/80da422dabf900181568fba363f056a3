@@ -1,0 +1,10 @@
+package page;
+
+import appium.core.BasePage;
+
+public class CliquePage extends BasePage {
+
+	public void  cliqueLongo() {
+		
+	}
+}
