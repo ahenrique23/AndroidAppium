@@ -34,4 +34,7 @@ public class MenuPage extends BasePage{
 		selecionarPorTexto("Cliques");
 	}
 	
+	public void opcaoEscondida() {
+		selecionarPorTexto("Opção bem escondida");
+	}
 }

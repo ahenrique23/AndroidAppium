@@ -19,4 +19,8 @@ public class CliquePage extends BasePage {
 	public String obterTextoCampo() {
 		return getDrive().findElement(By.xpath("(//android.widget.TextView)[3]")).getText();
 	}
+	
+	public void clicar(String valor) {
+		selecionarPorTexto(valor);
+	}
 }

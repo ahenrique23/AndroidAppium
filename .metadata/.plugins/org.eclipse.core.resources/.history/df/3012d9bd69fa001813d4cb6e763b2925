@@ -1,0 +1,15 @@
+package page;
+
+import appium.core.BasePage;
+
+public class OpcaoEscondidaPage extends BasePage {
+	
+	public String obterTexto() {
+		return obterTexto();
+	}
+	
+	public void clicar(String valor) {
+		selecionarPorTexto(valor);
+	}
+	
+}

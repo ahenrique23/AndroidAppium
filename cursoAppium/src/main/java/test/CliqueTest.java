@@ -38,18 +38,22 @@ public class CliqueTest extends BaseTest {
 	@Test 
 	public void devInteragirComCliqueDuplo() {
 		 
-		//Realizar o clique Duplo
-		
+		//Realizar o clique Duplo		
+		page.clicar("Clique duplo");
+		page.clicar("Clique duplo");
 		//Verificar o resultado
+		Assert.assertEquals("Duplo Clique", page.obterTextoCampo());
 		
 	}
 	
 	@Test 
-	public void devInteragirComCliqueDuploLento() {
+	public void devInteragirComCliqueDuploLento() throws InterruptedException {
 		 
 		//Realizar o clique Duplo Lento
-		
+		page.clicar("Clique duplo lento");
+		Thread.sleep(1000);
+		page.clicar("Clique duplo lento");
 		//Verificar o resultado
-		
+		Assert.assertEquals("Duplo Clique lento", page.obterTextoCampo());
 	}	
 }

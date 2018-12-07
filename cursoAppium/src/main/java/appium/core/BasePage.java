@@ -2,6 +2,7 @@ package appium.core;
 
 import static appium.core.DriverFactory.getDrive;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -49,5 +50,24 @@ public class BasePage {
 		public boolean existeElentoPorTexto(String texto) {
 			List<MobileElement> elementos = getDrive().findElements(By.xpath("//*[@text='"+texto+"']"));
 			return elementos.size() > 0;
+		}
+		
+		/**************		Scroll		***********/
+		public void scroll(double inicio, double fim) {
+			
+			org.openqa.selenium.Dimension size = getDrive()
+					.manage().window().getSize();
+			
+			int x = size.width / 2;
+			
+			int start_y = (int) (size.height * inicio);
+			int end_y = (int) (size.height * fim);
+			
+			new TouchAction(getDrive())
+				.press(x, start_y)
+				.waitAction(Duration.ofMillis(500))
+				.moveTo(x, end_y)
+				.release()
+				.perform();
 		}
 }

@@ -30,14 +30,19 @@
 <fullyQualifiedTypeName name="page.AlertPage"/>
 <fullyQualifiedTypeName name="page.TabsPage"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
-<fullyQualifiedTypeName name="page.MenuPage"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileElement"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileBy"/>
-<fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
-<fullyQualifiedTypeName name="appium.core.DriverFactory"/>
 <fullyQualifiedTypeName name="page.CliquePage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
+<fullyQualifiedTypeName name="java.time.Duration"/>
+<fullyQualifiedTypeName name="page.MenuPage"/>
+<fullyQualifiedTypeName name="page.OpcaoEscondidaPage"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Dimension"/>
+<fullyQualifiedTypeName name="java.awt.Dimension"/>
+<fullyQualifiedTypeName name="appium.core.DriverFactory"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>
