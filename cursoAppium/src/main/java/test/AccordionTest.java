@@ -1,11 +1,9 @@
 package test;
 
-import appium.core.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.sun.media.sound.MidiUtils.TempoCache;
-
+import appium.core.BaseTest;
 import page.AccordionPage;
 import page.MenuPage;
 

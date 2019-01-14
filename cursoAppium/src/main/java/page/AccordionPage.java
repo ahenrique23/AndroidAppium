@@ -3,9 +3,7 @@ package page;
 import appium.core.BasePage;
 
 public class AccordionPage extends BasePage {
-	
-
-	
+		
 	public void clicarOpcao1() {
 		selecionarPorTexto("Opção 1");
 	}
