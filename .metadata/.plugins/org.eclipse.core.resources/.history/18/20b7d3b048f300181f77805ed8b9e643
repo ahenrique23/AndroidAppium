@@ -1,7 +1,0 @@
-package test;
-
-import BaseTeste;
-
-public class AlertTeste extends BaseTeste {
-
-}

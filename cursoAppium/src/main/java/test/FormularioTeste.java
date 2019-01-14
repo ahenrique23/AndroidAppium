@@ -75,7 +75,20 @@ public class FormularioTeste extends BaseTest{
 	    assertTrue(page.obterSwitchCadastrado().endsWith("Marcado"));
 	}	
 	
-	//Terminar esse metodo
+	@Test
+	public void deveInteragirComSeekbar() {
+		
+		//Clicar SeeBar
+		page.clicarSeekbar(0.67);
+		
+		//Clicar Salvar
+		page.clicarSalvar();
+		
+		//Conferir Resultado
+		Assert.assertTrue(page.existeElentoPorTexto("Slider: 67"));
+		
+	}
+	
 	@Test
 	public void deveIneragirComDatePicker() {
 		
@@ -89,9 +102,18 @@ public class FormularioTeste extends BaseTest{
 		Assert.assertTrue(page.obterTextoData());
 	}
 	
-	
-	
-	
-	
-	
+	@Test
+	public void deveIntragirComTimePicker() {
+		
+		//Deve clicar na data
+		page.selecionarPorTexto("06:00");
+		//Alterar hora
+		page.clicarHora();
+		//Alterar minuto
+		page.clicarMinuto();
+		//Confirmar
+		page.selecionarPorTexto("OK");
+		//Verificar hora
+		Assert.assertTrue(page.obterHora());
+	}	
 }

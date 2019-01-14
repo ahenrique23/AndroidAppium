@@ -31,5 +31,10 @@ public class AlertPage extends BasePage {
 	public void sair() {
 		selecionarPorTexto("SAIR");
 	}
+	
+	public void clicarForaDaCaixa() {
+		tap(100, 150);
+	}
+	
 }
 

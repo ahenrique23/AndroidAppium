@@ -1,7 +1,0 @@
-package test;
-
-import java.lang.Object.BaseTest;
-
-public class AlertTest extends BaseTest {
-
-}

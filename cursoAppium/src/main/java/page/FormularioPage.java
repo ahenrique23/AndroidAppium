@@ -1,15 +1,16 @@
 package page;
 
+import static appium.core.DriverFactory.getDrive;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import appium.core.BasePage;
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
 
 public class FormularioPage extends BasePage {
-	
-
-		
+			
 	public void escreverNome(String nome) {
 		escrever(MobileBy.AccessibilityId("nome"), nome);
 	}
@@ -38,6 +39,18 @@ public class FormularioPage extends BasePage {
 		return isCheckMarcado(By.className("android.widget.CheckBox"));
 	}
 	
+	public void clicarSeekbar(double posicao) {
+		int delta = 55;
+		MobileElement seek = getDrive().findElement(MobileBy.AccessibilityId("slid"));
+		int y = seek.getLocation().y + (seek.getSize().height / 2);
+		System.out.println(y);
+		
+		int xinicial = seek.getLocation().x + delta;		
+		int x = (int) (xinicial + ((seek.getSize().width - 2*delta) * posicao));
+		
+		tap(x, y);
+	}	
+	
 	public boolean isSwitchMarcado() {
 		return isCheckMarcado(MobileBy.AccessibilityId("switch"));
 	}
@@ -63,7 +76,18 @@ public class FormularioPage extends BasePage {
 	}
 	
 	public boolean obterTextoData() {
-		return existeElentoPorTexto("20/2/2000");
-		
+		return existeElentoPorTexto("20/2/2000");		
+	}
+	
+	public boolean obterHora() {
+		return existeElentoPorTexto("10:50");
+	}
+	
+	public void clicarHora() {
+		clicar(MobileBy.AccessibilityId("10"));		
+	}
+	
+	public void clicarMinuto() {
+		clicar(MobileBy.AccessibilityId("50"));
 	}
 }
