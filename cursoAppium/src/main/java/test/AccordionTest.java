@@ -20,7 +20,7 @@ public class AccordionTest extends BaseTest {
 		//Acessar accordion op1
 		page.clicarOpcao1();
 		//Conferir texto do resultado 1
-		Assert.assertTrue(page.obterTextoAccordion1());		
+		Assert.assertTrue(page.obterTextoAccordion1());
 		//Acessar accordion op2
 		page.clicarOpcao2();
 		//Conferir texto do resultado 2		
