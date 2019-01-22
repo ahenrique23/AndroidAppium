@@ -15,7 +15,7 @@ public class OpcaoEscondidaTest extends BaseTest {
 	@Test
 	public void deveEncontrarOpcaoEscondida() {
 	//scroll down
-	menu.scroll(0.9, 0.1);
+	menu.scrollDown();
 	//clicar menu
 	menu.opcaoEscondida();
 	//verificar mensagem

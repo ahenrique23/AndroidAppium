@@ -52,6 +52,22 @@ public class BasePage {
 			return elementos.size() > 0;
 		}
 		
+		/********** 	Aperfeicoamento Scroll	*****/
+		public void scrollDown() {
+			swipe(0.9, 0.1);
+		}
+		public void scrollUp() {
+			swipe(0.1, 0.9);
+		}
+		
+		/********** 	Aperfeicoamento Swipe	*****/
+		public void swipeLeft() {
+			swipe(0.1, 0.9);
+		}
+		public void swipeRight() {
+			swipe(0.9, 0.1);
+		}
+		
 		/**************		Scroll		***********/
 		public void scroll(double inicio, double fim) {
 			
@@ -67,6 +83,25 @@ public class BasePage {
 				.press(x, start_y)
 				.waitAction(Duration.ofMillis(500))
 				.moveTo(x, end_y)
+				.release()
+				.perform();
+		}
+		
+		/**************		Swipe		***********/
+		public void swipe(double inicio, double fim) {
+			
+			org.openqa.selenium.Dimension size = getDrive()
+					.manage().window().getSize();
+			
+			int y = size.height / 2;
+			
+			int start_x = (int) (size.width * inicio);
+			int end_x = (int) (size.width * fim);
+			
+			new TouchAction(getDrive())
+				.press(start_x, y)
+				.waitAction(Duration.ofMillis(500))
+				.moveTo(end_x, y)
 				.release()
 				.perform();
 		}
