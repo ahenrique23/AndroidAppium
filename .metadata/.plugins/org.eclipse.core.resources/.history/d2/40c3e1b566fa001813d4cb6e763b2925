@@ -1,7 +1,0 @@
-package test;
-
-import appium.core.BaseTest;
-
-public class OpcaoEscondida extends BaseTest {
-
-}

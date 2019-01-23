@@ -1,0 +1,8 @@
+package test;
+
+import appium.core.BaseTest;
+
+public class SwipeList extends BaseTest {
+	
+	
+}

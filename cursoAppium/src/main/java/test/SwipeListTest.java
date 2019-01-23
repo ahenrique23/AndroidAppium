@@ -13,10 +13,9 @@ public class SwipeListTest extends BaseTest {
 	private SwipeListPage page = new SwipeListPage();
 	
 	@Test
-	private void deveRealizarTesteSwipeList() {
+	public void deveRealizarTesteSwipeList() {
 		
-		//Clicar Swipe List
-		
+		//Clicar Swipe List		
 		menu.acesssarSwipeList();
 		
 		//Op 1 para a direita
@@ -35,13 +34,9 @@ public class SwipeListTest extends BaseTest {
 		page.clicarBotaoMais();
 		
 		//Verificar Op4
-		Assert.assertTrue(page.existeElentoPorTexto("Opção 4 (-)"));		
+		Assert.assertTrue(page.existeElentoPorTexto("Opção 4 (+)"));		
 		
-		//Op 5	para esquerda
-		page.swipeElementLeft("Opção 5 (-)");
 		
-		//Verificar Ops5
-		Assert.assertTrue(page.existeElentoPorTexto("Opção 5"));
 		
 	}
 }

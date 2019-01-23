@@ -38,12 +38,13 @@ public class MenuPage extends BasePage{
 	
 	public void opcaoEscondida() {
 		WebDriverWait wait = new WebDriverWait(getDrive(), 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Formulário']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Abas']")));
 		scrollDown();
 		selecionarPorTexto("Opção bem escondida");
 	}
 	
 	public void acesssarSwipe() {
+		scrollDown();
 		selecionarPorTexto("Swipe");
 	}
 	

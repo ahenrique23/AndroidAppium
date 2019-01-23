@@ -13,8 +13,7 @@ public class SwipeTest extends BaseTest {
 	@Test
 	public void deveRealizarTesteSwipe() {
 		
-		//Acessar menu
-		menu.scroll(0.9, 0.1);
+		//Acessar menu		
 		menu.acesssarSwipe();
 		
 		//Verificar Texto "a esquerda"

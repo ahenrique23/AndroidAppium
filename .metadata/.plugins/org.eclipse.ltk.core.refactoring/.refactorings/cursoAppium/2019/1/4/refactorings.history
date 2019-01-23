@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;test.SwipeList.java&apos; to &apos;SwipeListTest.java&apos;&#x0D;&#x0A;- Original project: &apos;cursoAppium&apos;&#x0D;&#x0A;- Original element: &apos;test.SwipeList.java&apos;&#x0D;&#x0A;- Renamed element: &apos;test.SwipeListTest.java&apos;" description="Rename compilation unit &apos;SwipeList.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;test{SwipeList.java" name="SwipeListTest.java" references="false" stamp="1548193960989" version="1.0"/>
+</session>

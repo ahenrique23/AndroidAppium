@@ -55,10 +55,10 @@ public class BasePage {
 		
 		/********** 	Aperfeicoamento Scroll	*****/
 		public void scrollDown() {
-			swipe(0.9, 0.1);
+			scroll(0.9, 0.1);
 		}
 		public void scrollUp() {
-			swipe(0.1, 0.9);
+			scroll(0.1, 0.9);
 		}
 		
 		/********** 	Aperfeicoamento Swipe	*****/

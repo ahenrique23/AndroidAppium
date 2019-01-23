@@ -1,0 +1,35 @@
+package test;
+
+import org.junit.Test;
+
+import appium.core.BaseTest;
+import page.MenuPage;
+
+public class SwipeTest extends BaseTest {
+	
+	private MenuPage menu = new MenuPage(); 
+	
+	@Test
+	public void deveRealizarTesteSwipe() {
+		
+		//Acessar menu
+		menu.acesssarSwipe();
+		
+		//Verificar Texto
+		
+		//Swipe para Direita
+		
+		//Verificar Texto
+		
+		//Clicar botao Direita
+		
+		//Verificar Texto "Chegar ate o fim"
+		
+		//Swipe Esquerda
+		
+		//Clicar botao esquerda
+		
+		//Veificar texto
+		//
+	}
+}
