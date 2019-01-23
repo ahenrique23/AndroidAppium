@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -54,9 +55,7 @@ public class BasePage {
 		
 		/**************		Scroll		***********/
 		public void scroll(double inicio, double fim) {
-			
-			org.openqa.selenium.Dimension size = getDrive()
-					.manage().window().getSize();
+			Dimension size = getDrive().manage().window().getSize();			
 			
 			int x = size.width / 2;
 			
