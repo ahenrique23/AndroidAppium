@@ -1,9 +1,15 @@
 package test;
 
+import static appium.core.DriverFactory.getDrive;
+
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import appium.core.BaseTest;
+import io.appium.java_client.functions.ExpectedCondition;
 import page.MenuPage;
 import page.OpcaoEscondidaPage;
 
@@ -14,13 +20,14 @@ public class OpcaoEscondidaTest extends BaseTest {
 	
 	@Test
 	public void deveEncontrarOpcaoEscondida() {
-	//scroll down
-	menu.scrollDown();
-	//clicar menu
-	menu.opcaoEscondida();
-	//verificar mensagem
-	Assert.assertEquals("Você achou essa opção", page.obterTexto());
-	//sair
-	page.clicar();
+	
+		//scroll down
+		menu.scrollDown();
+		//clicar menu
+		menu.opcaoEscondida();
+		//verificar mensagem
+		Assert.assertEquals("Você achou essa opção", page.obterTexto());
+		//sair
+		page.clicar();
 	}
 }

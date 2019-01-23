@@ -37,6 +37,9 @@ public class MenuPage extends BasePage{
 	}
 	
 	public void opcaoEscondida() {
+		WebDriverWait wait = new WebDriverWait(getDrive(), 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Formulário']")));
+		scrollDown();
 		selecionarPorTexto("Opção bem escondida");
 	}
 	
@@ -46,9 +49,15 @@ public class MenuPage extends BasePage{
 	
 	public void acesssarSwipeList() {		
 		WebDriverWait wait = new WebDriverWait(getDrive(), 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Formulãrio']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Formulário']")));
 		scrollDown();		
 		selecionarPorTexto("Swipe List");		
-		}	
+		}
+	public void acesssarDragNDrop() {		
+		WebDriverWait wait = new WebDriverWait(getDrive(), 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Formulário']")));
+		scrollDown();		
+		selecionarPorTexto("Drag and drop");		
+		}
 }
 

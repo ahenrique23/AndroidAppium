@@ -89,14 +89,27 @@ public class BasePage {
 		/**************		Swipe		***********/
 		public void swipe(double inicio, double fim) {
 			
-			org.openqa.selenium.Dimension size = getDrive()
-					.manage().window().getSize();
+			Dimension size = getDrive().manage().window().getSize();
 			
 			int y = size.height / 2;
 			
 			int start_x = (int) (size.width * inicio);
 			int end_x = (int) (size.width * fim);
 			
+			new TouchAction(getDrive())
+				.press(start_x, y)
+				.waitAction(Duration.ofMillis(500))
+				.moveTo(end_x, y)
+				.release()
+				.perform();
+		}
+		
+		/**************		Swipe List	 	***********/
+		public void swipeElement(MobileElement element, double inicio, double fim) {			
+			int y = element .getLocation().y + (element.getSize().height / 2);			
+				
+			int start_x = (int) (element.getSize().width * inicio);
+			int end_x = (int) (element.getSize().width * fim);			
 			new TouchAction(getDrive())
 				.press(start_x, y)
 				.waitAction(Duration.ofMillis(500))
