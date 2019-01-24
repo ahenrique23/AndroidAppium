@@ -13,7 +13,7 @@ import io.appium.java_client.TouchAction;
 
 public class BasePage {
 	
-	//Escrever Texto
+		//Escrever Texto
 		public void escrever(By by, String texto) {
 			getDrive().findElement(by).sendKeys(texto);
 		}
@@ -117,4 +117,24 @@ public class BasePage {
 				.release()
 				.perform();
 		}
+		
+		/************ WebView  **********************/
+		public void setEmail(String valor) {
+						
+			DriverFactory.getDrive().findElement(By.id("email")).sendKeys(valor);
+		}
+		
+		public void setSenha(String senha) {
+			DriverFactory.getDrive().findElement(By.id("senha")).sendKeys(senha);
+		}
+		
+		public void clicarEntrar() {
+			clicar(By.xpath("//submit[@type='submit']"));
+		}
+		
+		/*Espera*/
+		public void espera(int valor) throws InterruptedException {
+			Thread.sleep(valor);
+		}
+		
 }

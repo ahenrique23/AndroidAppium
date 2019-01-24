@@ -60,5 +60,13 @@ public class MenuPage extends BasePage{
 		scrollDown();		
 		selecionarPorTexto("Drag and drop");		
 		}
+	
+	public void acessaracessarSBHibrido() {
+		selecionarPorTexto("SeuBarriga Híbrido");
+	}
+	
+	public void acessaracessarSBNativo() {
+		selecionarPorTexto("SeuBarriga Nativo");
+	}
 }
 
